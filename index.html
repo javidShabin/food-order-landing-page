@@ -12,11 +12,44 @@
     />
   </head>
   <body>
-    <header class="">
-      <div class="">
-        <nav class="">
+    <header class="flex justify-center">
+      <div class="container w-[90%] h-[90px]">
+        <nav class="flex justify-between h-full items-center">
           <div class="logo">
-            <img src="./asset/images/Logo.png" alt="logo" />
+            <img src="./asset/images/Logo.png" alt="logo" class="w-[150px]"/>
+          </div>
+          <div>
+            <p class="hidden lg:flex">
+              <b>Delivered to:</b
+              ><i class="ri-map-pin-2-fill text-orange-400"></i> Current
+              location <b>Muhammed pur Bus stand, Dhaka</b>
+            </p>
+          </div>
+          <ul class="sm:flex items-center hidden">
+            <li class="mr-[25px]">
+              <a href="#" class="font-[700]"
+                ><i
+                  class="ri-search-line text-orange-400 text-[20px] font-[700] mr-[10px]"
+                ></i
+                >Search Food</a
+              >
+            </li>
+            <li
+              class="shadow-lg shadow-[#f8b02ae2] px-[16px] py-[8px] rounded-md"
+            >
+              <a href="#" class="font-[700] text-[#ffa500]"
+                ><i
+                  class="ri-user-3-fill text-orange-400 text-[20px] font-[700] mr-[10px]"
+                ></i
+                >Login</a
+              >
+            </li>
+          </ul>
+          <div class="toggle-menu sm:hidden">
+            <i
+              id="toggle-btn"
+              class="ri-menu-line text-[25px] font-bold text-orange-400"
+            ></i>
           </div>
         </nav>
       </div>
