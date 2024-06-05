@@ -12,11 +12,12 @@
     />
   </head>
   <body>
-    <header class="flex justify-center">
-      <div class="container w-[90%] h-[90px]">
+    <!-- Header section -->
+    <header class="flex justify-center z-[999]">
+      <div class="container w-[80%] h-[90px]">
         <nav class="flex justify-between h-full items-center">
           <div class="logo">
-            <img src="./asset/images/Logo.png" alt="logo" class="w-[150px]"/>
+            <img src="./asset/images/Logo.png" alt="logo" class="" />
           </div>
           <div>
             <p class="hidden lg:flex">
@@ -29,6 +30,7 @@
             <li class="mr-[25px]">
               <a href="#" class="font-[700]"
                 ><i
+                id="searchIcon"
                   class="ri-search-line text-orange-400 text-[20px] font-[700] mr-[10px]"
                 ></i
                 >Search Food</a
@@ -54,6 +56,35 @@
         </nav>
       </div>
     </header>
+    <!-- Main section -->
+    <main>
+      <!-- Hero section -->
+      <section class="w-[100%] h-[87vh] relative">
+        <div
+          class="container bg-[url('./asset/images/bg.png')] bg-center bg-cover w-full h-full flex justify-around items-center p-[90px]"
+        >
+          <!-- Search form html -->
+          <div class="search-form sm:flex lg: hidden absolute top-[1rem] right-[15rem] bg-[#fff] px-[20px] py-[5px] rounded-xl">
+            <input type="text" placeholder="Search here..." class="w-full border-0 outline-0 px-[20px] py-[5px] rounded-xl"/>
+            <i class="ri-search-line text-orange-400 text-[20px] font-[700] m-auto"></i>
+          </div>
+          <div class="hero-content">
+            <h1 class="text-[#fff] text-[70px] font-[800] text-shadow">
+              Are You Serving ?
+            </h1>
+            <p class="text-[#343536] text-[18px]">
+              Within a few clicks, find meals that are accessible near you
+            </p>
+
+            <!-- Order form -->
+            <div class="order-form"></div>
+          </div>
+          <div class="hero-image mt-[100px]">
+            <img src="./asset/images/Image.png" alt="image" class="w-[750px]" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="./script.js"></script>
   </body>

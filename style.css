@@ -1,0 +1,15 @@
+.text-shadow{
+    text-shadow: 3px 3px 7px #000;
+}
+h1.active{
+    color: #000;
+}
+.search-form{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.search-form.active{
+    transform: translateY(0);
+    opacity: 1;
+}
